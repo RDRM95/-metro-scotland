@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vite/
+coverage/
+test-results/
+playwright-report/
+export/
+*.mp4
+*.webm
+*.gif
+.DS_Store
+*.log
+.env
+.env.*
