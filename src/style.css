@@ -140,11 +140,15 @@ html, body {
 
 .rotate-hint {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 28%;
   display: none;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: none;
   color: var(--fg);
   text-align: center;
   z-index: 6;
