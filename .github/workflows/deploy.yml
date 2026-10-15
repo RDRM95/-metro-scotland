@@ -42,6 +42,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Try to switch the repository to "GitHub Actions" as the Pages source
+          # on first run; a no-op once Pages is already enabled.
+          enablement: true
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
