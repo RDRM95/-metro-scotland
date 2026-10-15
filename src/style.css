@@ -151,6 +151,7 @@ html, body {
   font-size: 14px;
   letter-spacing: 0.1em;
   padding: 24px;
+  pointer-events: none;
 }
 @media (max-width: 640px) and (orientation: portrait) {
   .rotate-hint.enabled { display: flex; }
