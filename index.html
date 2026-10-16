@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#050607" />
+    <meta name="description" content="METRO SCOTLAND — THE SURFACE NETWORK. A cinematic pixel-art military horror short set in post-nuclear Glasgow, 2033." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>METRO SCOTLAND — The Surface Network</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23050607'/%3E%3Crect x='3' y='3' width='10' height='10' fill='none' stroke='%23c0392b' stroke-width='2'/%3E%3Crect x='7' y='7' width='2' height='2' fill='%23ff3b2f'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div id="stage" class="stage">
+        <canvas id="screen" class="screen" width="480" height="270" aria-label="Metro Scotland film"></canvas>
+        <div id="start-gate" class="start-gate" role="button" tabindex="0" aria-label="Start">
+          <div class="gate-box">
+            <div class="gate-title">METRO SCOTLAND</div>
+            <div class="gate-sub">THE SURFACE NETWORK</div>
+            <div class="gate-hint">TAP OR CLICK TO INITIALISE TERMINAL</div>
+            <div class="gate-small">Headphones recommended · Landscape on mobile</div>
+          </div>
+        </div>
+      </div>
+      <div class="rotate-hint enabled" aria-hidden="true">ROTATE TO LANDSCAPE<br /><span style="color:#5d665c;font-size:11px">THE TRANSMISSION IS WIDESCREEN</span></div>
+      <div id="controls" class="controls hidden" aria-label="Playback controls">
+        <div class="progress-wrap" id="progress-wrap" title="Seek">
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <div class="scene-marks" id="scene-marks"></div>
+        </div>
+        <div class="control-row">
+          <button class="ctl" id="btn-play" title="Play / Pause (Space)" aria-label="Play or pause">▶</button>
+          <button class="ctl" id="btn-restart" title="Restart (R)" aria-label="Restart">⟲</button>
+          <button class="ctl" id="btn-menu" title="Return to menu (Esc)" aria-label="Menu">☰</button>
+          <select class="ctl select" id="scene-select" title="Scene selection" aria-label="Scene selection"></select>
+          <span class="time" id="time-readout">00:00 / 00:00</span>
+          <span class="spacer"></span>
+          <button class="ctl" id="btn-subs" title="Subtitles (C)" aria-label="Toggle subtitles">CC</button>
+          <button class="ctl" id="btn-mute" title="Mute (M)" aria-label="Mute">🔊</button>
+          <input class="ctl volume" id="volume" type="range" min="0" max="100" value="80" title="Volume" aria-label="Volume" />
+          <button class="ctl" id="btn-full" title="Fullscreen (F)" aria-label="Fullscreen">⛶</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
